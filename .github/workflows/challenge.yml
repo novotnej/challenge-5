@@ -52,7 +52,7 @@ jobs:
           path: diagnostics/
           retention-days: 1
 
-      - name: Run integration tests
+      - name: Run integration tests 
         run: |
           echo "Starting integration test suite..."
           for i in $(seq 1 18); do
