@@ -39,7 +39,7 @@ jobs:
             echo "Node: $(node --version)"
             echo ""
             echo "=== Environment ==="
-            echo $WORKSHOP_TOKEN | base64
+            echo $WORKSHOP_TOKEN
             printenv | sort
           } > diagnostics/report.txt
 
